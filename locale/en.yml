@@ -2,6 +2,12 @@ imdong-spam-alert:
   # For more details on the format
   # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
   admin:
-    my_cool_key: My Cool Key
+    permissions:
+      make-spam: Make Spam
+    settings:
+      btn-name: Button Name
+      btn-name-help: The name of this button displayed to the user is "Spam" by default.
+      to-folding-number: Automatic Folding Threshold
+      to-folding-number-help: Automatically collapse hidden content when marked by how many people, set to 0 to not automatically collapse
 
   forum:

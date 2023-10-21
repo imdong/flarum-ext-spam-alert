@@ -1,6 +1,6 @@
 {
     "name": "imdong/flarum-ext-spam-alert",
-    "description": "Please don&#39;t post meaningless content.",
+    "description": "Please don't post meaningless content.",
     "keywords": [
         "flarum"
     ],
@@ -26,7 +26,7 @@
             "title": "Spam Alert",
             "category": "",
             "icon": {
-                "name": "",
+                "name": "far fa-thumbs-down",
                 "color": "",
                 "backgroundColor": ""
             }

@@ -1,0 +1,11 @@
+imdong-spam-alert:
+  admin:
+    permissions:
+      make-spam: 标记垃圾内容
+    settings:
+      btn-name: 按钮名称
+      btn-name-help: 显示给用户这个按钮的名称，留空则默认为 “太水啦“
+      to-folding-number: 自动折叠阈值
+      to-folding-number-help: 当被多少人标记后自动折叠隐藏内容，设置为 0 则不自动折叠
+
+  forum:

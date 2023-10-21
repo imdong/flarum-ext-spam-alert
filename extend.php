@@ -12,13 +12,24 @@
 namespace ImDong\SpamAlert;
 
 use Flarum\Extend;
+use ImDong\SpamAlert\Common\Defined;
 
 return [
-    (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/js/dist/forum.js')
-        ->css(__DIR__.'/less/forum.less'),
     (new Extend\Frontend('admin'))
-        ->js(__DIR__.'/js/dist/admin.js')
-        ->css(__DIR__.'/less/admin.less'),
-    new Extend\Locales(__DIR__.'/locale'),
+        ->js(__DIR__ . '/js/dist/admin.js')
+    ,
+
+    (new Extend\Frontend('forum'))
+        ->js(__DIR__ . '/js/dist/forum.js')
+        ->css(__DIR__ . '/less/forum.less')
+    ,
+
+    new Extend\Locales(__DIR__ . '/locale'),
+
+    // 设置默认值
+    (new Extend\Settings())
+        // 默认折叠次数
+        ->default(Defined::key('to-folding-number'), 5)
+    ,
+
 ];
