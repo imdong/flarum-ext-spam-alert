@@ -9,17 +9,17 @@ class Defined
     /**
      * @var string 插件的前缀 应该与 js 侧保持一致
      */
-    public static string $extPrefix = 'imdong-spam-alert';
+    public static  $extPrefix = 'imdong-spam-alert';
 
     /**
      * @var Defined|null 我自己
      */
-    private static self|null $_instance = null;
+    private static $_instance = null;
 
     /**
      * @var mixed|TranslatorInterface
      */
-    private TranslatorInterface $translator;
+    private $translator;
 
     private function __construct()
     {
@@ -29,7 +29,7 @@ class Defined
     /**
      * @return static
      */
-    private static function getInstance(): static
+    private static function getInstance()
     {
         if (!self::$_instance) {
             self::$_instance = new self();

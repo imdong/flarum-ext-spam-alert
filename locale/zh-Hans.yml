@@ -1,11 +1,21 @@
 imdong-spam-alert:
   admin:
     permissions:
-      make-spam: 标记垃圾内容
+      set-spam: 标记垃圾内容
+      see-spam-info: 查看标记详情
     settings:
       btn-name: 按钮名称
-      btn-name-help: 显示给用户这个按钮的名称，留空则默认为 “太水啦“
+      btn-name-help: 显示给用户这个按钮的名称，前后状态使用 “/” 分隔，留空则默认为 “标记垃圾/取消标记垃圾“
       to-folding-number: 自动折叠阈值
       to-folding-number-help: 当被多少人标记后自动折叠隐藏内容，设置为 0 则不自动折叠
 
   forum:
+    post:
+      btn-set-spam: 标记垃圾
+      btn-unset-spam: 取消标记垃圾
+      spam-hide-tips: 因被标记垃圾多次被隐藏
+    notification:
+      content: 回复因被标记垃圾多次而被折叠
+      excerpt: 请遵守站规，如反复被标记垃圾可能会受到系统处罚。
+    settings:
+      notify_post_spam_hide_label: 因被标记垃圾而隐藏
