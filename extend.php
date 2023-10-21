@@ -43,7 +43,7 @@ return [
     // 添加文章的关联查询
     (new Extend\Model(Post::class))
         // 标记过垃圾的用户列表
-        ->belongsToMany('spams', User::class, 'post_spams', 'post_id', 'create_user_id')
+        ->belongsToMany('spams', User::class, PostSpam::class, 'post_id', 'create_user_id')
         ->cast('is_spam_hide', 'boolean')
     ,
 

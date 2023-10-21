@@ -12,7 +12,7 @@ return Migration::createTable(
         $table->integer('create_user_id')->unsigned();
         $table->primary(['post_id', 'create_user_id']);
 
-        $table->timestamp('created_at')->nullable();
+        $table->timestamp('created_at')->nullable()->useCurrent();
     }
 );
 
